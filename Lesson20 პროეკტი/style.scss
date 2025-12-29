@@ -1,73 +1,66 @@
-$black: #000;
-$white: #fff;
 
+body, html {
+    background-color: #f9fafa;
+    color: #20303c;
+    font-family: Helvetica Helvetica, Arial sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+user agent stylesheet
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f6f6f6;
+    display: block;
+    margin: 8px;
+}
+:root {
+    --wix-font-stack: Madefor, "Helvetica Neue", Helvetica, Arial, "\E3\192\A1\E3\201A\A4\E3\192\AA\E3\201A\AA", "meiryo", "\E3\192\2019\E3\192\A9\E3\201A\AE\E3\192\17D\E8\A7\2019\E3\201A\B4 pro w3", "hiragino kaku gothic pro", sans-serif;
+    --wix-font-weight-regular: 400;
+    --wix-font-weight-medium: 530;
+    --wix-font-weight-bold: 700;
+    --wix-font-weight-xbold: 800;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+@media (min-width: 1024px) {
+    :root {
+        --layout-vertical-padding: 72px;
+    }
+}
+@media (min-width: 834px) {
+    :root {
+        --layout-vertical-padding: 48px;
+    }
+}
+:root {
+    --screen-width-xs: 768px;
+    --screen-width-s-tablet: 834px;
+    --screen-width-s: 1024px;
+    --screen-width-m: 1280px;
+    --screen-width-l: 1366px;
+    --screen-width-l-plus: 1440px;
+    --screen-width-xl: 1680px;
+    --screen-width-xxl: 1920px;
+    --layout-header-size: 72px;
+    --layout-vertical-padding: 24px;
+    --primary-color: #116dff;
+    --view-button-box: 36px;
+}
+:root {
+    --wix-font-stack: Madefor, "Helvetica Neue", Helvetica, Arial, "メイリオ", "meiryo", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", sans-serif;
+    --wix-font-weight-regular: 400;
+    --wix-font-weight-medium: 530;
+    --wix-font-weight-bold: 700;
+    --wix-font-weight-xbold: 800;
+}
+:root {
+    --wix-font-stack: Madefor, "Helvetica Neue", Helvetica, Arial, "メイリオ", "meiryo", "ヒラギノ角ゴ pro w3", "hiragino kaku gothic pro", sans-serif;
+    --wix-font-weight-regular: 400;
+    --wix-font-weight-medium: 530;
+    --wix-font-weight-bold: 700;
+    --wix-font-weight-xbold: 800;
 }
 
-.header {
-  width: 100%;
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .logo {
-    font-size: 26px;
-    font-weight: 700;
-  }
-
-  .nav a {
-    margin-left: 40px;
-    text-decoration: none;
-    color: $black;
-    font-size: 18px;
-    transition: .2s;
-
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  padding: 60px;
-
-  .text {
-    max-width: 450px;
-
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: $black;
-      color: $white;
-      padding: 12px 26px;
-      font-size: 18px;
-      text-decoration: none;
-      transition: .2s;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  .hero-img {
-    width: 500px;
-    margin-left: 60px;
-    border-radius: 12px;
-  }
-}
